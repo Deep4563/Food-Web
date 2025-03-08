@@ -56,7 +56,7 @@ const registerUser = async (req,res)=>{
       })){
         return res.json({
             success: false,
-            message: "Please enter strong password",
+            message: "Password must be at least 8 characters long, Password must contain at least 1 uppercase letter, Password must contain at least 1 number, Password must contain at least 1 symbol (e.g., !, @, #, $, etc.).",
           });
     }
 
